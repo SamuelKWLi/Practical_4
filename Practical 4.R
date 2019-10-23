@@ -51,7 +51,7 @@
 # A commit only saves these save points to your local repo and not the the online Github repo.
 
 # For the Commit window, go to the Git button on the top bar and select 'Commit', or click the commit button int eh git tab on the top right pane.
-# The top pane of this new window will have a list of all the files in the local repo that has been changed since the last commit.
+# The top left pane of this new window will have a list of all the files in the local repo that has been changed since the last commit.
 # First stage the files that you want to commit by ticking their check box, or clicking the stage button to select all of them.
 # Then Write a commit note in the top right pane and click the commit button.
 # You can see what changes have been made for the selected file on the bottom pane int eh commit window.
@@ -61,3 +61,11 @@
 # Commiting only saves your changes to the local repo. if you want to upload these changes to your online repo on Github, you must push it.
 # To do this, ensure all of your desired files have been commited and press the push button (Green up arrow) on either the commit window or the Git tab on the top right pane.
 # If the push button is greyed out, you must check if Rstudio is connected to Github as discussed above in Method 3.
+
+## Pulling from Github ##
+
+# You can also make changes to your files from the online Github repo, or have other people make changes to them.
+# To take these changes and apply them to your own local files, you must pull them from Github.
+# To pull, press the pull button (blue down arrow) from either the commit window or the Git tab in the top right pane.
+# The changed files will be downloaded into your local repo and replace them, updating your project with these new changes.
+

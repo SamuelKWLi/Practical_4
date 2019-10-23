@@ -43,3 +43,21 @@
 # If the response does not have 'origin/master', it is not tracking your main Github repo branch so you must change it.
 # To change it enter 'git push --set-upstream origin master' and check it again using the above command. The result should have 'origin/master' in it.
 
+## Committing to Git ##
+
+# When ever you save your files, you are saving a copy of it to your local work directory.
+# Git allows you to commit your files, creating a save point and allowing you to keep track of changes you make through saves.
+# Before commiting, files need to be staged, which is the checking of differences in the files from the last commit so it is ready to be commited again.
+# A commit only saves these save points to your local repo and not the the online Github repo.
+
+# For the Commit window, go to the Git button on the top bar and select 'Commit', or click the commit button int eh git tab on the top right pane.
+# The top pane of this new window will have a list of all the files in the local repo that has been changed since the last commit.
+# First stage the files that you want to commit by ticking their check box, or clicking the stage button to select all of them.
+# Then Write a commit note in the top right pane and click the commit button.
+# You can see what changes have been made for the selected file on the bottom pane int eh commit window.
+
+## Pushing to Github ###
+
+# Commiting only saves your changes to the local repo. if you want to upload these changes to your online repo on Github, you must push it.
+# To do this, ensure all of your desired files have been commited and press the push button (Green up arrow) on either the commit window or the Git tab on the top right pane.
+# If the push button is greyed out, you must check if Rstudio is connected to Github as discussed above in Method 3.

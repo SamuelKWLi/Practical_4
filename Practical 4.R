@@ -34,6 +34,12 @@
 # This method assumes you have an existing project that you want to save.
 # First go to 'Tools', ' Global Options', and 'Git/SVN'.
 # Ensure the top tick box is ticked and that R knows where the 'git.exe' is located.
-# Then go to the 
-
+# Then go to the 'Tools', 'Project Options' and select 'Git' from the drop down box.
+# This will produce a git window on the top right pane and a git button on the top bar that can be used to manipulate git.
+# Then to connect this local Git repo with the online Github repo you created, you need to access the shell through 'Tools' and 'Shell'.
+# type 'git remote -v' into the command line and it should return with your Github repository URL, if not you need to connect it.
+# to connect it you must type 'git remote add origin *********' where the * symbols are the Github repo URL which you copy and paste in.
+# Then check if RStudio is tracking your Origin/Master branch from Github by entering 'git branch -vv'.
+# If the response does not have 'origin/master', it is not tracking your main Github repo branch so you must change it.
+# To change it enter 'git push --set-upstream origin master' and check it again using the above command. The result should have 'origin/master' in it.
 

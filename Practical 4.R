@@ -145,4 +145,23 @@ library(flexdashboard)
 # To force the convertion anyway, enter 'always_allow_html: true' in the YAML information in the header area. Ensure it has no spaces in front of it and is line with the other YAML information.
 # The Word document format may also not print visualisations of data.
 
+### Adding References ###
 
+# Mendeley is a free reference manager where you link pdfs of your articles and books.
+# You can then enter the necessary data about the articles and books so it can create a reference in your desired format.
+# To link this library of references to R and RMarkdown documents, you need to create a BibTex file.
+# A bibtex file can store all of your references in a single file, and if syncing is enabled, will be updated as you change things in the Mendelay software.
+# To create it go to the Mendelay software and select 'Tools' > 'Options' > 'BibTex'.
+# From this window, you can choose to Escape LaTex special characters (does not check the fields which may cause error), enable BibTex syncing to keep it updated, and choose if the file is for your whole library or a single section.
+# When you create the file, it must be in the folder where the R project file is so it can be seen by R.
+
+# There are many optional structural parameters that can be added and controlled using the YAML information in the header area. These include adding and formating Tables of contents, numbered sections, bibliography etc.
+# Make sure you include the bibliography information and the Biblex file in the YMAL information in the header area, otherwise the citations will not work as it cannot find your reference file.
+# To cite a document in RMarkdown, you need to enter the citation key which is [@author(s)year;@author(s)year], and can be found within Mendeley.
+# Another way of getting the citation key is to use the citr package.
+install.packages("citr")
+library(citr)
+# This tool can be accessed by going to the 'Addins' button on the top bar and selecting citr.
+# Select the desired documents and the citation keys will be retrieved, which can be inserted into the RMarkdown document.
+# Make sure citations are not placed inside code chuncks and are only placed where normal text is.
+# Referenced documents will have their full reference appear in a complete bibliography within the last section of the RMarkdown document. You can create an empty last section for this bibliography.

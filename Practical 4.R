@@ -69,3 +69,21 @@
 # To pull, press the pull button (blue down arrow) from either the commit window or the Git tab in the top right pane.
 # The changed files will be downloaded into your local repo and replace them, updating your project with these new changes.
 
+### Fork a Repository ###
+
+# A fork is a copy or offshoot of someone elses or your own master repository.
+# These forks can be used as a base from which you build your own code or with which you use to edit and fix someone elses code.
+# You can then submit a pull request to the original who can choose to accept it and have it incorporated into their original.
+
+## Branches ##
+# For your repositories, you can creat branches that isolate development away from your master repo and other branches. It is like a test environment.
+# You could make edits to your master repo and save it as another branch, or you can save your master repo as a branch before editing and edit the new branch.
+# Any commits made on this new branch are seperate from the master repo.
+# To send the eddited branch to the original author and repo, send an new pull request using the associated button.
+# Select the base repository you want to send the request to from the top of the new window
+# A comparison of the two branches are found at the bottom.
+# You can then send the pull request.
+
+# If you recieve a pull request It will appear on your pull request tab.
+# You can choose to merge, squash and merge or rebase and merge from the drop down menu.
+# Squash and merge squashes all of the commits in the editted branch into a single commit in the master repo.

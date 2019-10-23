@@ -165,3 +165,9 @@ library(citr)
 # Select the desired documents and the citation keys will be retrieved, which can be inserted into the RMarkdown document.
 # Make sure citations are not placed inside code chuncks and are only placed where normal text is.
 # Referenced documents will have their full reference appear in a complete bibliography within the last section of the RMarkdown document. You can create an empty last section for this bibliography.
+
+### Packrat ###
+
+# Packrat is a useful tool that is used to store all of your loaded packages into a single folder within the project.
+# This improves the sharing of projects as people can use your Packrat to get all of the packages you used and with the same versions, hopefully allowing them to run your code without issue.
+# This can be accessed in R using 'Tools', 'Project Options' or by useing the Packrat button at the top of the packages tab in the bottom right pane.

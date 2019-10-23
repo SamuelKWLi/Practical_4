@@ -87,3 +87,57 @@
 # If you recieve a pull request It will appear on your pull request tab.
 # You can choose to merge, squash and merge or rebase and merge from the drop down menu.
 # Squash and merge squashes all of the commits in the editted branch into a single commit in the master repo.
+
+### RMarkdown ###
+
+# RMarkdown is a format that allows for the display of code, explanations and results within the same document.
+# It is a very versitiles format that can be converted to many other usefuls formats like html for webpages, word documents, PDFs, blogs, books.
+# It can also work with a variety of different code like R, Python and others. It can be designated by typeing the code type into the  {} at the top of a code block.
+# You need the retculate package to run python software.
+install.packages("reticulate")
+library(reticulate)
+
+# You can now create a new Markdown document. 
+# There are two types, RMarkdown and R Notebook. There is little difference so we can just use the RMarkdown format.
+# The R Notebook format allows for a preview using the 'output: html_notebook' line in the header area that can be added to an RMarkdown format if you want. This function is replaced by the knit button on the top bar for RMarkdown.
+
+# You can create a new RMarkdown document in R by going to 'File', 'New File' and 'RMarkdown.
+# You can also change the format of an existing file using the drop down menu on the bottom right corner of the script pane.
+# To run the whole document, press the run button on the top right of the script pane. It has a green bar on the right that shows how where the code is currently running and red if an error.
+# Click the 'Knit' button to run the RMarkdown document in its entirety, and creates a copy of the result as the format that is identified by the header shown by ---, within witch YAML information is written to format the document.
+# When using code block you can edit how data is treated using the cog button on the right. You can have the code be shown or just the output etc.
+# The play symbol facing downwards runs all of the code upto the top of your selected code block.
+# The play button runs your code block.
+
+## HTML ##
+
+# To run code in a HTML file, you need to insert a code block which can be found in the insert button on the top right of the script pane.
+# When using code chunk you can edit how data is treated using the cog button on the right. You can have the code be shown or just the output etc.
+# The play symbol facing downwards runs all of the code upto the top of your selected code chunk.
+# The play button runs your code chunk.
+# Make sure the YAML information in the header area is set to format the document into HTML when it is knitted.
+
+## Flexdashboard ##
+
+# A dashboard is a format for focussing on interactive visualisations with some complimentary text or code.
+# Flexdashboard is a package that is used to knit the RMarkdown format into a dashboard.
+install.packages("flexdashboard")
+library(flexdashboard)
+# Make sure the relevent Felxdashboard YAML information is placed in the header area at the top of the document.
+
+# To add visualisation parameters like column width, name the thing you want to edit (column) and enter the parameter intide {}. These parameters will be applied to the section bellow it.
+# Once the visualisation parameters are entered, it must be underlined with a long string of --------------- that is long enough to turn from black to blue. This should be placed below any visualisation paramters like those above to identify them as being such parameters.
+# The visualisation parameters will apply to all of the next sections until it is meets another set of parameters and a line of -------------------.
+# To denote a section , you must use ### with the section name written after, turning the ### blue.
+# Sections apply until the next set of ### and name.
+# Remember that most of this is just for the flexdashboard format.
+
+# To add text, just type information normally outside of a code chunk.
+# To add code, just use the same method as for HTML and using the 'insert' button.
+# However, the flexdashboard format does not normally show code in its final result.
+# One method to show code in the felxdashboard format, is to enter 'echo=TRUE' in the {} brackets at the top of each desired code chunck which determines the chuncks code type.
+# Another method that causes all code in the whole document to be shown is to enter 'knitr::opts_chunk$set(echo=TRUE)' within the first code chunk of the document, not within the {}.
+
+## Word Document ##
+
+# To set the format to a word document, change the YAML in the header area into the necessary information.

@@ -141,3 +141,8 @@ library(flexdashboard)
 ## Word Document ##
 
 # To set the format to a word document, change the YAML in the header area into the necessary information.
+# Some functions may be limited to HTML, resulting in an error if trying to format the RMarkdown file into a word document.
+# To force the convertion anyway, enter 'always_allow_html: true' in the YAML information in the header area. Ensure it has no spaces in front of it and is line with the other YAML information.
+# The Word document format may also not print visualisations of data.
+
+
